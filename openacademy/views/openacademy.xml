@@ -44,6 +44,37 @@
                     </sheet>
                 </form>
             </field>
-        </record>     
+        </record>   
+
+        <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                            <page string="About">
+                                This is an example of notebooks
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>  
+
+             </field>
+        </record>
+
+        <record model="ir.ui.view" id="course_search_view">
+            <field name="name">course.search</field>
+            <field name="model">openacademy.course</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
+    
 
 </odoo>
