@@ -125,7 +125,7 @@
             <field name="res_model">openacademy.session</field>
             <field name="view_mode">tree,form</field>
         </record>
-
+jowelespina
         <menuitem id="session_menu" name="Sessions"
                   parent="openacademy_menu"
                   action="session_list_action"/>
