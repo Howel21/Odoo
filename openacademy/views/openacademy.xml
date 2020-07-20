@@ -59,28 +59,6 @@
             </field>
         </record> 
 
-        <!-- override the automatically generated list view for courses -->
-        <record model="ir.ui.view" id="course_tree_view">
-            <field name="name">course.tree</field>
-            <field name="model">openacademy.course</field>
-            <field name="arch" type="xml">
-                <tree string="Course Tree">
-                    <field name="name"/>
-                    <field name="responsible_id"/>
-                </tree>
-            </field>
-        </record>
-
-        <record model="ir.ui.view" id="course_search_view">
-            <field name="name">course.search</field>
-            <field name="model">openacademy.course</field>
-            <field name="arch" type="xml">
-                <search>
-                    <field name="name"/>
-                    <field name="description"/>
-                </search>
-            </field>
-        </record>
-
+      
 
 </odoo>
