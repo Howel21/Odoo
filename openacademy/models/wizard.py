@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-from odoo import models, fields, api
+from datetime import timedelta
+from odoo import models, fields, api, exceptions, _
 
 class Wizard(models.TransientModel):
     _name = 'openacademy.wizard'
